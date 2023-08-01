@@ -13418,6 +13418,32 @@ table {
   margin-left: -280px;
   -webkit-transition: margin-left 0.25s;
   transition: margin-left 0.25s;
+  position: fixed;
+  top: 0;
+}
+.sidebar .sidebar-link {
+  color: #212529;
+  display: block;
+  text-decoration: none;
+  padding-top: 0.875rem;
+  padding-bottom: 0.875rem;
+}
+.sidebar .sidebar-link:hover {
+  background-color: rgba(13, 110, 253, 0.16);
+}
+.sidebar .sidebar-link.active {
+  position: relative;
+  color: #0d6efd !important;
+  background-color: rgba(13, 110, 253, 0.16);
+}
+.sidebar .sidebar-link.active::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 2px;
+  height: 100%;
+  width: 3px;
+  background: #0d6efd;
 }
 
 .main {
@@ -13427,6 +13453,9 @@ table {
 .sidebar-toggled .sidebar {
   margin-left: 0;
 }
+.sidebar-toggled .main {
+  margin-left: 280px;
+}
 
 @media (min-width: 992px) {
   .sidebar {
@@ -13435,9 +13464,12 @@ table {
   }
   .main {
     width: calc(100vw - 280px);
+    margin-left: 280px;
+    -webkit-transition: 280px 0.25s;
+    transition: 280px 0.25s;
   }
   .sidebar-toggled .sidebar {
-    margin-right: -280px;
+    margin-left: -280px;
   }
   .sidebar-toggled .main {
     width: 100%;
