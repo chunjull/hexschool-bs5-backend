@@ -33,9 +33,14 @@
                         </div>
                     </a>
                     <div class="collapse" id="menu-order">
-                        <a href="#" class="sidebar-link">
+                        <a href="./orders.html" class="sidebar-link">
                             <div class="ps-5">
-                                其他項目
+                                訂單列表
+                            </div>
+                        </a>
+                        <a href="./order.html" class="sidebar-link">
+                            <div class="ps-5">
+                                單一訂單細節
                             </div>
                         </a>
                     </div>
@@ -102,6 +107,53 @@
                             </span>
                             <input type="search" class="form-control border-0 shadow-none">
                         </div>
+                    </div>
+                    <div class="card-body p-0">
+                        <div class="table-responsive">
+                            <table class="table table-hover mb-0">
+                                <thead class="bg-light"> <!-- bg-light 沒有效果 -->
+                                    <tr class="align-middle">
+                                        <th scope="col" class="py-3 ps-4">訂單編號</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">用戶姓名</th>
+                                        <th scope="col">購買品項</th>
+                                        <th scope="col">付款狀態</th>
+                                        <th scope="col">購買金額</th>
+                                        <th scope="col pe-4">編輯</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="text-nowrap">
+                                    <tr>
+                                        <td scope="row" class="ps-4">TX123456789</td>
+                                        <td>ab1234@email.com</td>
+                                        <td>
+                                            卡小伯
+                                        </td>
+                                        <td>六角西餐：大麥克全家餐</td>
+                                        <td><div class="text-danger">尚未付款</div></td>
+                                        <td class="text-end">900</td>
+                                        <td class="text-end pe-4">
+                                            <a href="#"
+                                            class="btn btn-sm btn-outline-dark me-2">
+                                            編輯 <i class="bi bi-pen"></i></a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card-footer bg-transparent py-3">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-end mb-0">
+                                <li class="page-item"><a class="page-link" href="#" aria-label="Previous">
+                                    <span aria-hidden="true">&laquo;</span></a></li>
+                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#" aria-label="Next">
+                                    <span aria-hidden="true">&raquo;</span></a></li>
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>
