@@ -80,9 +80,9 @@
                                     <dt class="col-sm-3 text-truncate fw-bold mb-2">訂單金額</dt>
                                     <dd class="col-sm-9">1,800</dd>
                                     <dt class="col-sm-3 text-truncate fw-bold mb-2">訂單狀態</dt>
-                                    <dd class="col-sm-9">待處理</dd>
+                                    <dd class="col-sm-9 text-danger">待處理</dd>
                                     <dt class="col-sm-3 text-truncate fw-bold mb-2">發票狀態</dt>
-                                    <dd class="col-sm-9">未開立</dd>
+                                    <dd class="col-sm-9 text-danger">未開立</dd>
                                 </dl>
                             </div>
                         </div>
@@ -168,10 +168,10 @@
                                 <div class="row mb-3">
                                     <label for="invoiceType" class="col-sm-2 col-form-label">發票類型</label>
                                     <div class="col-sm-10">
-                                        <select name="" id="invoiceType" class="form-select">
-                                        <option value="">個人發票</option>
-                                        <option value="" selected>營業人三聯式發票</option>
-                                        <option value="">捐贈發票</option>
+                                        <select name="invoiceType" id="invoiceType" class="form-select">
+                                        <option value="個人發票">個人發票</option>
+                                        <option value="營業人三聯式發票" selected>營業人三聯式發票</option>
+                                        <option value="捐贈發票">捐贈發票</option>
                                         </select>
                                     </div>
                                 </div>
